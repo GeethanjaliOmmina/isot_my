@@ -1,0 +1,29 @@
+body {
+    background-image: url("/public/images/imag2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#con
+{    
+    filter: alpha(opacity=90);    
+    opacity: .9;
+    border-style:none;
+    display:flex;
+    font-size: 250px;
+    margin-top: 320px ;
+    margin-bottom: 250px ;
+    margin-left: 470px;
+    height:60px;
+}
+button{
+    padding: 20px;
+    padding-top:  5px;
+    border: 2px solid gray;
+    opacity: 0.6;
+    border-radius: 15px;
+    margin: 10px;
+    display:inline-block;
+    font-family:serif;
+    font-size: 20px;
+}

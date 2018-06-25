@@ -1,0 +1,60 @@
+.navstyle{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.event1 {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    padding-left: 10px;
+}
+.event1:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+.eventdiv {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.eventdivdemo {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar-nav {
+    text-align: center;
+  }
+
+  .container{
+      height: 100%;
+      width: 100%;
+      margin-top: 20px;
+      margin-left: 10px;
+      border-color: white;
+  }
+
+  .createeventbutton {
+      border-radius: 100%;
+      border : 5px solid black;
+  }
+
+  .demopara {
+    font-size: 40px;
+  }
+
+  .buttondiv {
+    position: relative;
+    margin-left: 1200px;
+    /*margin-top: 20px;*/
+    top: -140px;
+  }
+
+  p{
+      font-size: 20px;
+  }
