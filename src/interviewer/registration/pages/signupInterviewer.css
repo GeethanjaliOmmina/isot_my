@@ -1,0 +1,24 @@
+body
+{
+    background-image: url("interview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    font-style: oblique;
+}
+#con
+{
+    filter: alpha(opacity=90);    
+    opacity: .9;
+    border-style:groove;
+    width: 600px ;
+    margin-top: 50px;
+    font-size: 25px;
+    margin-left: auto ;
+    margin-right: auto ;
+    height:600px;
+}

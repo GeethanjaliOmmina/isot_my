@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './skills.css';
 import NavBar from '../common/navbar';
-
+var sectionStyle={
+    width:"100%",
+    height:"800px",
+    backgroundImage:`url(${`./images/img2.jpg`})`,
+};
 class Skills extends Component {
     constructor(props) {
         super(props);

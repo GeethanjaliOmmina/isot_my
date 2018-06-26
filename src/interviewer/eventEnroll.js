@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 //import './eventenroll.css';
-
+var sectionStyle={
+    width:"100%",
+    height:"800px",
+    backgroundImage:`url(${`./images/img2.jpg`})`,
+};
 
 class InterviewerEventEnroll extends Component {
     render() {

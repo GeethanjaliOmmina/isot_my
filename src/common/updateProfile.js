@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import "./updateProfile.css";
-var sectionStyle={
-    width:"100%",
-    height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
-};
 class UpdateProfile extends Component {
     render() {
         return (
             <div>
                 <h3>Update Profile</h3><br /><br />
-                <div className="container1">
+                <div className="container">
                     <div >
                         <label class="control-label col-sm-2" htmlfor="uname">Username</label>
                         {/* <label class="control-label col-sm-2" htmlfor="uname">Username</label> */}

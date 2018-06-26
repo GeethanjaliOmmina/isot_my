@@ -1,4 +1,9 @@
 import React, { Component } from 'react';
+var sectionStyle={
+    width:"100%",
+    height:"800px",
+    backgroundImage:`url(${`./images/img2.jpg`})`,
+};
 class Drivereg extends Component {
     render() {
         return (

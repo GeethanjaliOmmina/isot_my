@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
  import "./signupAdmin.css";
+ var sectionStyle={
+    width:"100%",
+    height:"800px",
+    backgroundImage:`url(${`./images/img2.jpg`})`,
+};
 class SignupAdmin extends Component {
     render() {
         return (
-            <div>
+            <section style={sectionStyle}>
+                <br/> <br/>
             {/* <h3>Admin Registration</h3><br/> */}
-            <div className="container4">
+            <div className="container7">
             <h3>Admin Registration</h3><br/>
                     <div >
                     <label class="control-label col-sm-2" htmlfor="uname">Username</label>
@@ -41,14 +47,13 @@ class SignupAdmin extends Component {
                         <option>chennai</option>
                     </select>
                     </div>
-                    <br /><br />
-                    <div class=" col-xs-10">
-                        <button type="reset" class="btn btn-primary">Clear</button>
+                    <br /><br /><br/><br/>
+                    <div class=" col-xs-10" >
+                        <button type="reset" class="btn btn-primary" id="but">Clear</button> 
                         <button type="submit" class="btn btn-primary">Register</button>
                     </div>
                     </div>
-            </div>
-        
+            </section>        
         );
     }
 }

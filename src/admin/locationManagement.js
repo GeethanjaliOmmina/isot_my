@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import './location.css';
 import NavBar from '../common/navbar';
-
+var sectionStyle={
+    width:"100%",
+    height:"800px",
+    backgroundImage:`url(${`./images/img2.jpg`})`,
+};
 class Location extends Component {
     constructor(props) {
         super(props);

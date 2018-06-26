@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import './intDashboard.css'
 import NavBar from '../common/navbar';
 import {Link} from 'react-router-dom';
+var sectionStyle={
+    width:"100%",
+    height:"800px",
+    backgroundImage:`url(${`./images/img2.jpg`})`,
+};
 class InterviewerDashboard extends Component {
     render() {
         return (

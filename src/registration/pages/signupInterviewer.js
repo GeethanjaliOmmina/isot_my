@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import "./signupInterviewer.css";
+var sectionStyle={
+    width:"100%",
+    height:"800px",
+    backgroundImage:`url(${`./images/img2.jpg`})`,
+};
 class SignupInterviewer extends Component {
     render() {
         return (
-            <div>
+            <section style={sectionStyle}>
+                <br/><br/>
             {/* <h3>Interviewer Registration</h3><br/> */}
             <div className="container4">
             <h3>Interviewer Registration</h3><br/>
@@ -47,7 +53,7 @@ class SignupInterviewer extends Component {
                         <button type="submit" class="btn btn-primary">Register</button>
                     </div>
                     </div>
-            </div>
+            </section>
         )
     }
 }

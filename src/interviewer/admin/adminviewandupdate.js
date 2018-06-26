@@ -10,11 +10,13 @@ var sectionStyle={
 class AdminViewAndUpdate extends Component {
     render() {
         return (
+            <section style={sectionStyle}>
             <div>
                 <NavBar />
                 <Tabs />
                 <AdminView />
             </div>
+            </section>
         );
     }
 }

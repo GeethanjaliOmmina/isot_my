@@ -1,9 +1,9 @@
-section{
-    /* background-image: url("/public/images/imag2.jpg"); */
+body {
+    background-image: url("/public/images/imag2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*
+
 #con
 {    
     filter: alpha(opacity=90);    
@@ -26,4 +26,4 @@ button{
     display:inline-block;
     font-family:serif;
     font-size: 20px;
-} */
+}

@@ -10,6 +10,7 @@ var sectionStyle={
 class AdminView extends Component {
     render() {
         return (
+            <section style={sectionStyle}>
             <div>
                 <NavBar/>
                 <Tabs />
@@ -30,6 +31,7 @@ class AdminView extends Component {
                     </div>
                 </div>
             </div>
+            </section>
         );
     }
 }
