@@ -3,7 +3,7 @@ import "./signupInterviewer.css";
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
+    backgroundImage:`url(${`./images/back4.jpg`})`,
 };
 class SignupInterviewer extends Component {
     render() {
@@ -11,7 +11,7 @@ class SignupInterviewer extends Component {
             <section style={sectionStyle}>
                 <br/><br/>
             {/* <h3>Interviewer Registration</h3><br/> */}
-            <div className="container4">
+            <div className="container7">
             <h3>Interviewer Registration</h3><br/>
                     <div >
                     <label class="control-label col-sm-2" htmlfor="uname">Username</label>
@@ -49,7 +49,7 @@ class SignupInterviewer extends Component {
                     </div>
                     <br /><br />
                     <div class=" col-xs-10">
-                        <button type="reset" class="btn btn-primary">Clear</button>
+                        <button type="reset" class="btn btn-primary" id="but">Clear</button>
                         <button type="submit" class="btn btn-primary">Register</button>
                     </div>
                     </div>

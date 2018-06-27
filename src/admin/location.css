@@ -15,8 +15,7 @@
     transition-delay: 5ms;
     font-family:cursive;
     font-size: 20px;
-
-  }
+}
 .item:hover
 {
     box-shadow: 4px 4px #535152;
@@ -36,7 +35,14 @@
   padding-bottom: 50px;
   padding-left: 80px;
 }
-
 #tile{
   margin-left:80px;
+}
+#con2
+{
+  opacity: 0.9;
+  margin: auto;
+  /* margin-right: 25px; */
+  width:1000px;
+  height: 600px;
 }

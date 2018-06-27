@@ -40,3 +40,11 @@
 #tile{
   margin-left:80px;
 }
+#con2
+{
+  opacity: 0.9;
+  margin: auto;
+  /* margin-right: 25px; */
+  width:1000px;
+  height: 600px;
+}

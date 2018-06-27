@@ -1,47 +1,28 @@
-/* body
-{
-    background-image: url("inter1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;    
+.container7 {
+    /* filter: alpha(opacity=90); */
+    opacity: 0.9;
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 8px grey;
+    /* background-color: white; */
 }
 h3{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    font-size: 45px;
-    font-style: oblique;
+    color:aliceblue;
+    /* align-content: center; */
+    /* float: left; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-left: 20px; */
 }
-#con
+#but
 {
-    filter: alpha(opacity=90);    
-    opacity: .9;
-    border-style:groove;
-    width: 600px ;
-    margin-top: 50px;
-    font-size: 25px;
-    margin-left: auto ;
-    margin-right: auto ;
-    height:600px;
-} */
-
-.container5{
-    /* margin-top: 100px;
-    margin-left: 150px;
-    margin-right: 200px;
-    width: 1000px;
-    height: 700px; */
-        width: 1000px;
-        height: 1000px;
-        margin: auto;
-        padding: 20px;
-        /* box-shadow: 0px 0px 8px grey; */
-        background-color: white;
-    
+    margin-left:270px;
+    margin-right: 50px;
+    color:aliceblue;
 }
-#slab
+label
 {
-    float: left;
-}
-#llab
-{
-    float: left;
+    color: aliceblue;
 }

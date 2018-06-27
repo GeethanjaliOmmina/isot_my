@@ -4,7 +4,7 @@ import NavBar from '../common/navbar';
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
+    backgroundImage:`url(${`./images/back1.jpg`})`,
 };
 class Skills extends Component {
     constructor(props) {
@@ -47,8 +47,11 @@ class Skills extends Component {
             //    </div>
             //    </div>
             //    </div>
-            <div>
-          <NavBar />
+            <section style={sectionStyle}>
+            <NavBar />
+            <br/>
+            <div id="con2">
+          {/* <NavBar /> */}
             <div class="text-center">
                 <div class="form-group">
                     <input type="text" class="form-control" id="skill" name="mySkill"  ngModel="mySkill" placeholder="Add a new skill"/>
@@ -100,7 +103,8 @@ class Skills extends Component {
                 </div>
             </div>
   </div >
-       </div> 
+  </div>
+       </section>
   
     );
 

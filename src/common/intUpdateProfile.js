@@ -3,14 +3,16 @@ import "./updateProfile.css";
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
+    backgroundImage:`url(${`./images/back1.jpg`})`,
 };
 class UpdateProfile extends Component {
     render() {
         return (
-            <div>
+            <section style={sectionStyle}>
+            <br/><br/>
+                {/* <h3>Update Profile</h3><br /><br /> */}
+                <div className="container7">
                 <h3>Update Profile</h3><br /><br />
-                <div className="container1">
                     <div >
                         <label class="control-label col-sm-2" htmlfor="uname">Username</label>
                         {/* <label class="control-label col-sm-2" htmlfor="uname">Username</label> */}
@@ -37,11 +39,10 @@ class UpdateProfile extends Component {
                         </div>
                     </div>
                     <div class=" col-xs-10">
-                        <button type="submit" class="btn btn-primary">Update</button>
+                        <button type="submit" class="btn btn-primary" id="but">Update</button>
                     </div>
                 </div>
-            </div>
-
+            </section>
         );
     }
 }

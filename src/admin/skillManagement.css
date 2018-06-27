@@ -31,7 +31,11 @@
   padding-bottom: 50px;
   padding-left: 80px;
 }
-
 #tile{
   margin-left:50px;
+}
+#con2
+{
+  width:1000px;
+  height: 800px;
 }

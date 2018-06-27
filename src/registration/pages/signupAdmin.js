@@ -3,7 +3,7 @@ import React, { Component } from 'react';
  var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
+    backgroundImage:`url(${`./images/back4.jpg`})`,
 };
 class SignupAdmin extends Component {
     render() {

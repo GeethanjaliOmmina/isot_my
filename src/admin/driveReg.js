@@ -2,14 +2,15 @@ import React, { Component } from 'react';
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
+    backgroundImage:`url(${`./images/iimag9.jpg`})`,
 };
 class Drivereg extends Component {
     render() {
         return (
-            <div>
+            <section style={sectionStyle}>
+            {/* <h3>Drive Registration</h3> */}
+            <div className="container7">
             <h3>Drive Registration</h3>
-            <div className="container1">
                   <div >
                     <label class="control-label col-sm-2" htmlfor="dname">Name</label>
                     {/* <label class="control-label col-sm-2" htmlfor="uname">Username</label> */}
@@ -51,11 +52,11 @@ class Drivereg extends Component {
                     </div>
                     
                     <div class=" col-xs-10">
-                        <button type="reset" class="btn btn-primary">Clear</button>
+                        <button type="reset" class="btn btn-primary" id="but">Clear</button>
                         <button type="submit" class="btn btn-primary">Create Event</button>
                     </div>
                     </div> 
-                    </div>  
+                    </section>
             );
     }
 }

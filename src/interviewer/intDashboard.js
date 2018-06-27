@@ -5,13 +5,17 @@ import {Link} from 'react-router-dom';
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
+    backgroundImage:`url(${`./images/back1.jpg`})`,
 };
 class InterviewerDashboard extends Component {
     render() {
         return (
+            <section style={sectionStyle}>
+             
+             <br/><NavBar/>
+             <br/>
             <div class="container">
-                <NavBar/>
+                {/* <NavBar/> */}
                 <p>Recent Events</p>
                 <div class="eventdiv">
                 
@@ -36,6 +40,7 @@ class InterviewerDashboard extends Component {
                     </div>
                 </div>
             </div>
+            </section>
         );
     }
 }

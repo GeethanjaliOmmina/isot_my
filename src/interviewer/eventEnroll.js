@@ -3,13 +3,13 @@ import React, { Component } from 'react';
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
+    backgroundImage:`url(${`./images/back1.jpg`})`,
 };
 
 class InterviewerEventEnroll extends Component {
     render() {
         return (
-            <div>
+            <section style={sectionStyle}>
                 <br />
                 <div className="main-container" id="main-con">
                     <h1>Event Enrollment</h1>
@@ -94,9 +94,9 @@ class InterviewerEventEnroll extends Component {
                     <button type="button" className="btn btn-primary" id="update" >Update</button>
 
                 </div>
-            </div>
+            </section>
         );
     }
 }
 
-export default InterviewerEventEnroll
+export default InterviewerEventEnroll;

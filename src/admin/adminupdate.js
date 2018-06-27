@@ -6,12 +6,12 @@ import './adminupdate.css';
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
+    backgroundImage:`url(${`./images/back1.jpg`})`,
 };
 class AdminUpdate extends Component {
     render() {
         return (
-            <div>
+            <section style={sectionStyle}>
                 <NavBar />
                 <Tabs />
                 <div class="boxupdate">
@@ -38,7 +38,7 @@ class AdminUpdate extends Component {
                     </div>
                     <div class="btnevent"><button class="btn btn-primary">Close Event</button></div>
                 </div>
-            </div>
+            </section>
         );
     }
 }

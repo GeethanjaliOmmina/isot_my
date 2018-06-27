@@ -5,11 +5,12 @@ import {Link} from 'react-router-dom';
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
+    backgroundImage:`url(${`./images/back1.jpg`})`,
 };
 class AdminDashboard extends Component {
     render() {
         return (
+            <section style={sectionStyle}>
             <div class="container">
                 <NavBar/>
                 <p>Recent Events</p>
@@ -36,6 +37,7 @@ class AdminDashboard extends Component {
                     </div>
                 </div>
             </div>
+            </section>
         );
     }
 }

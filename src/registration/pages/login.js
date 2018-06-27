@@ -3,7 +3,7 @@ import './login.css';
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
+    backgroundImage:`url(${`./images/back3.jpg`})`,
 };
 class Login extends Component {
     render() {
@@ -31,7 +31,7 @@ class Login extends Component {
              </div> <br/><br/>
              <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary" id="but1">Submit</button>
                         </div>
                     </div>
             </div>

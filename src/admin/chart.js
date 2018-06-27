@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Pie } from 'react-chartjs-2';
 import NavBar from '../common/navbar';
+var sectionStyle={
+    width:"100%",
+    height:"800px",
+    backgroundImage:`url(${`./images/back1.jpg`})`,
+};
 //import './chart.css';
 // const obj = () => {
 
@@ -67,7 +72,7 @@ const data = {
 class Chart extends Component {
     render() {
         return (
-            <div>
+            <section style={sectionStyle}>
                 <NavBar />
                 <div class="chartstyle"><Pie data={data} height={70} /></div>
                 <div class="boxadjust"><div class="dropdown">
@@ -79,7 +84,7 @@ class Chart extends Component {
                     </ul>
                 </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }
