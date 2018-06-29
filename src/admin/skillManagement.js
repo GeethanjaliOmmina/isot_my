@@ -6,110 +6,135 @@ var sectionStyle={
     height:"800px",
     backgroundImage:`url(${`./images/back1.jpg`})`,
 };
+let datas = [];
 class Skills extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            skillname: ''
+        skillsArray: [],
+        newSkillContent: '',
+        id:0,
+        dat: []
         }
-        this.onPresskey = this.onPresskey.bind(this);
-    }
-    onPresskey(e) {
-        if (e.which === 13) {
-            var x = document.getElementById("b1");
-            if (x.style.display === "none") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-            console.log("enter key is pressed");
+        this.handleUserInput = this.handleUserInput.bind(this);
+        this.writeSkill = this.writeSkill.bind(this);
+        this.deleteSkill = this.deleteSkill.bind(this);
+        }
+        handleUserInput(e){
+        
+        this.setState({
+        newSkillContent: e.target.value.toUpperCase(), // the value of the text input
+        })
+        }
+        addSkill(skill, id) {
+        const skillToBeAdded = {
+        skill_name: skill
         }
         this.setState({
-            skillname: e.target.value
+        skillsArray: this.state.skillsArray.concat(skillToBeAdded)
         })
-
-        // onButton(){
-        //     var elem = document.getElementById("b1");
-        //                     elem.parentNode.removeChild(elem);
-        // }
-
-    }
-
-
+       
+       
+        fetch("https://elixir-islot-project-react.firebaseio.com/skills.json", {
+        method: 'POST',
+        headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+        "skill_id": id,
+        "skill_name": skill
+       
+        })
+        })
+       
+        }
+       
+       
+        componentDidMount() {
+        var self = this;
+        fetch("https://elixir-islot-project-react.firebaseio.com/skills.json").then(response => response.json())
+        .then(function (data) {
+        if(data==null)
+        console.log("nodata");
+        else{
+        var keys = Object.keys(data);
+        let skills = [];
+        for(var i=0;i<keys.length;i++)
+        {
+        var k = keys[i];
+        skills[i] = data[k];
+        }
+        console.log(self.state.keys);
+       
+        console.log(data[keys[0]].skill_id);
+        Object.assign(datas,data);
+        console.log(skills);
+        self.setState({
+        skillsArray: skills,
+        dat:data
+        })
+        }
+        })
+        }
+        writeSkill(){
+        // call a method that sets the LocationContent for a location to
+        // the value of the input
+        let ids = this.state.id;
+        this.addSkill(this.state.newSkillContent,ids);
+        ids+=1;
+        console.log("datas " + datas)
+       
+        // Set newLocationContent back to an empty string.
+        this.setState({
+        newSkillContent: '',
+        id:ids
+        
+        })
+        }
+        deleteSkill(id) {
+        console.log(id);
+        //console.log(this.state.key);
+        //console.log(this.state.key);
+        //var x = this.state.key[id];
+        //console.log(x);
+        fetch(`https://elixir-islot-project-react.firebaseio.com/skills/${id}.json`, {
+        method: 'DELETE',
+        headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        },
+        })
+        }
     render() {
+        var self = this;
         return (
-            //     <div>
-            //         <br />
-            //     <div className="main-containers" id="main-con">
-            //     <h1>SKILLS MANAGEMENT</h1>
-            //     <input type ="text"  className="input" placeholder="Add a new skill....." onKeyDown={this.onPresskey}  />
-            //    <div className="boxes" id="b1"><sup><img src="images/download.png" /></sup><br />{this.state.skillname}
-            //    </div>
-            //    </div>
-            //    </div>
             <section style={sectionStyle}>
             <NavBar />
             <br/>
             <div id="con2">
           {/* <NavBar /> */}
             <div class="text-center">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="skill" name="mySkill"  ngModel="mySkill" placeholder="Add a new skill"/>
-     
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="skill" name="mySkill" placeholder="Add a new skill" value={this.state.newSkillContent} onChange={this.handleUserInput}/>
+                    <button class="btn btn-primary" onClick={this.writeSkill}>Click Me </button>
             </div>
-            
-
+            </div>
+         
             <div class="row">
-                <div class="item col-lg-3" id="tile" >
+                {this.state.skillsArray.map(function(skills){
+                 return(   
+                <div class="item col-lg-3" id="${skills.skill_name}" onClick = {self.deleteSkill.bind(this)} >
                     <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-trash"></span>
+                        <span class="glyphicon glyphicon-trash"  ></span>
                     </button>
-                    <span>Java</span>
-
+                    <div>{skills.skill_name}</div>
+                    </div>
+                )})}
                 </div>
-                <div class="item col-lg-3" id="tile">
-                    <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-trash"></span>
-                    </button>
-                    <span>.net</span>
                 </div>
-                <div class="item col-lg-3" id="tile">
-                    <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-trash"></span>
-                    </button>
-                    <span>Angular</span>
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="item col-lg-3" id="tile">
-                    <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-trash"></span>
-                    </button>
-                    <span>Java Script</span>
-                </div>
-                <div class="item col-lg-3" id="tile">
-                    <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-trash"></span>
-                    </button>
-                    <span>Testing</span>
-                </div>
-                <div class="item col-lg-3" id="tile">
-                    <button type="button" class="btn btn-default btn-sm">
-                        <span class="glyphicon glyphicon-trash"></span>
-                    </button>
-                    <span>Informatica</span>
-                </div>
-            </div>
-  </div >
-  </div>
-       </section>
-  
-    );
-
+            </section>
+      );
     }
 }
-
-
 export default Skills;

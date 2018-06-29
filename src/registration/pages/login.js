@@ -3,7 +3,7 @@ import './login.css';
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/back3.jpg`})`,
+    backgroundImage:`url(${`./images/back4.jpg`})`,
 };
 class Login extends Component {
     render() {
@@ -11,25 +11,28 @@ class Login extends Component {
             <section style={sectionStyle}>
              <br/><br/><br/><br/>
             <div class="container3">
-            <h3>User Login</h3><br/>
+            <h2>User Login</h2><br/>
             <div class="form-group">
-                    <div>
-                        <label class="control-label col-sm-2" htmlfor="username">UserName:</label>
+                        {/* <label class="control-label col-sm-2" htmlfor="username">UserName:</label> */}
                         <div class="col-sm-10">
-                               <input type="text" class="form-control" id="uname" placeholder="Enter UserNmame" name="uname" />
+                        <label class="control-label l1 col-sm-2" htmlfor="username">UserName:</label>
+
+                            <input type="text" class="form-control" id="uname" placeholder="Enter UserNmame" name="uname" />
                         </div>
                     </div>
-            </div><br/>   <br/>
                     <br/>
-             <div class="form-group">
-                    <div>
-                        <label class="control-label col-sm-2" htmlfor="pwd">Password:</label>
+                    <br/>
+                    <div class="form-group">
+                        {/* <label class="control-label col-sm-2" htmlfor="pwd">Password:</label> */}
                         <div class="col-sm-10">
-                                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" />
+                        <label  class="control-label l1 col-sm-2" htmlfor="pwd">Password:</label>
+
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" />
                         </div>
                     </div>
-             </div> <br/><br/>
-             <div class="form-group">
+                    <br/>
+                    <br/>
+                    <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
                             <button type="submit" class="btn btn-primary" id="but1">Submit</button>
                         </div>

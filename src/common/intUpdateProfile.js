@@ -3,7 +3,7 @@ import "./updateProfile.css";
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/back1.jpg`})`,
+    backgroundImage:`url(${`./images/back2.jpg`})`,
 };
 class UpdateProfile extends Component {
     render() {
@@ -13,7 +13,7 @@ class UpdateProfile extends Component {
                 {/* <h3>Update Profile</h3><br /><br /> */}
                 <div className="container7">
                 <h3>Update Profile</h3><br /><br />
-                    <div >
+                      <div >
                         <label class="control-label col-sm-2" htmlfor="uname">Username</label>
                         {/* <label class="control-label col-sm-2" htmlfor="uname">Username</label> */}
                         <div class="col-sm-10">
@@ -39,7 +39,7 @@ class UpdateProfile extends Component {
                         </div>
                     </div>
                     <div class=" col-xs-10">
-                        <button type="submit" class="btn btn-primary" id="but">Update</button>
+                        <button type="submit" class="btn btn-primary">Update</button>
                     </div>
                 </div>
             </section>

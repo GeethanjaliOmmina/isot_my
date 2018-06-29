@@ -23,22 +23,22 @@ class AdminUpdate extends Component {
                         <button class="btn btn-primary">Approve</button>
                     </div>
                     <div class="boxelements">
-                        <h6>Pavan</h6>
+                        <h6>mani</h6>
                         <div class="numberbox">
-                            <p>2</p>
+                            <p>5</p>
                         </div>
                         <button class="btn btn-primary">Approve</button>
                     </div>
                     <div class="boxelements">
-                        <h6>Pavan</h6>
+                        <h6>dinesh</h6>
                         <div class="numberbox">
-                            <p>2</p>
+                            <p>7</p>
                         </div>
                         <button class="btn btn-primary demo">Approve</button>
                     </div>
                     <div class="btnevent"><button class="btn btn-primary">Close Event</button></div>
                 </div>
-            </section>
+        </section>
         );
     }
 }

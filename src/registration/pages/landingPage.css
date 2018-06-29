@@ -17,10 +17,31 @@ button{
     padding: 15px;
     padding-top:  5px;
     /* border: 2px solid gray; */
-    opacity: 0.5;
+    /* opacity: 0; */
     border-radius: 10px;
     margin: 10px;
     display:inline-block;
     font-family:serif;
     font-size: 16px;
 } 
+#para
+{
+    margin-top: 200px;
+    text-align: center;
+    font-size: 16px;
+    color:honeydew;
+    font-weight: bold;
+    width: 550px;
+    height: 350px;
+    margin-bottom: 300px;
+    margin-left:450px;
+    /* margin: auto; */
+    padding: 10px;
+    box-shadow: 5px 5px 8px lightgreen;
+}
+h2{
+    color: cyan;
+    font-size: 28px;
+    font-family:monospace;
+    font-weight: bold;
+}

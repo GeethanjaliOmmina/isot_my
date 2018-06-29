@@ -3,7 +3,7 @@ import "./updateProfile.css";
 var sectionStyle={
     width:"100%",
     height:"800px",
-    backgroundImage:`url(${`./images/img2.jpg`})`,
+    backgroundImage:`url(${`./images/back7.jpg`})`,
 };
 class UpdateProfile extends Component {
     render() {

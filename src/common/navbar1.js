@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-class NavBar extends Component {
+class NavBar1 extends Component {
     render() {
         return (
             <div>
@@ -11,21 +11,21 @@ class NavBar extends Component {
                         </div>
                         <ul class="nav navbar-nav">
                             <li>
-                                <Link to={'/admindashboard'}>Dashboard</Link>
+                                <Link to={'/intdashboard'}>Dashboard</Link>
                             </li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
-                            <li>
+                            {/* <li>
                                 <Link to={'/chart'}>
                                     <span class="glyphicon glyphicon-stats"></span> Stats</Link>
-                            </li>
+                            </li> */}
                             <li>
                                 <a class="dropdown-toggle" data-toggle="dropdown">
                                     <span class="glyphicon glyphicon-option-vertical"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><Link to={'/updateprofile'} >Update Profile</Link></li>
-                                    <li><Link to={'/skills'} >Skills Management</Link></li>
-                                    <li><Link to={'/location'} >Location Management</Link></li>
+                                    {/* <li><Link to={'/skills'} >Skills Management</Link></li> */}
+                                    {/* <li><Link to={'/location'} >Location Management</Link></li> */}
                                     <li><Link to={'/logout'} >Logout</Link></li>
                                 </ul>
                             </li>
@@ -37,4 +37,4 @@ class NavBar extends Component {
     }
 }
 
-export default NavBar;
+export default NavBar1;

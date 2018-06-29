@@ -2,6 +2,8 @@
 {
     height: 20vh;
     width: 10vw;
+    padding :auto;
+    margin-right: 10px;
     border: 1px solid transparent;
     background-color: white;
     border-radius: 5px;
